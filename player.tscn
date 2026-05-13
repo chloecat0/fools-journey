@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bbqaeikm46o2a"]
+
+[ext_resource type="Script" uid="uid://cg7622xq6oujd" path="res://player.gd" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+
+[node name="Player" type="CharacterBody2D" unique_id=637061040]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1839744026]
+shape = SubResource("CapsuleShape2D_onrkg")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=726964642]
+color = Color(0.81960785, 1, 0.27058825, 1)
+polygon = PackedVector2Array(0, -15, 7, -11, 10, 0, 6, 13, 0, 15, -7, 13, -10, 0, -8, -11)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=963802752]
+position_smoothing_enabled = true
