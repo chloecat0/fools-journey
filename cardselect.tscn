@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bcudx6vg18jgp"]
+
+[ext_resource type="PackedScene" uid="uid://sacf0e672tte" path="res://card.tscn" id="1_r88nj"]
+
+[node name="CardSelect" type="MarginContainer" unique_id=1331166929]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1967024198]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Card1" parent="HBoxContainer" unique_id=954436103 instance=ExtResource("1_r88nj")]
+layout_mode = 2
+
+[node name="Card2" parent="HBoxContainer" unique_id=1758429982 instance=ExtResource("1_r88nj")]
+layout_mode = 2
+
+[node name="Card3" parent="HBoxContainer" unique_id=64361803 instance=ExtResource("1_r88nj")]
+layout_mode = 2

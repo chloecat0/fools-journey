@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://sacf0e672tte"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_nxf5b"]
+size = Vector2(250, 300)
+
+[node name="Card" type="VBoxContainer" unique_id=954436103]
+custom_minimum_size = Vector2(250, 400)
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 161.0
+grow_vertical = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=860185369]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_nxf5b")
+
+[node name="Title" type="Label" parent="." unique_id=1729059735]
+layout_mode = 2
+text = "The Fool"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="." unique_id=1228939123]
+layout_mode = 2
+text = "Does something cool"
+horizontal_alignment = 1
+
+[node name="Select" type="Button" parent="." unique_id=1663715099]
+layout_mode = 2
+text = "Take Reading"
