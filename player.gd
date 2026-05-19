@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 
 signal leveled_up
@@ -60,7 +61,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED*speed_multiplier)
 	move_and_slide()
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if xp >= xp_to_level:
 		xp -= xp_to_level
 		xp_to_level *= 2

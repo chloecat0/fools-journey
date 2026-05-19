@@ -19,4 +19,7 @@ shape = SubResource("WorldBoundaryShape2D_uu6xs")
 points = PackedVector2Array(-1000, 0, 1000, 0)
 
 [node name="CardSelect" parent="." unique_id=1331166929 instance=ExtResource("2_uu6xs")]
-visible = false
+offset_left = -445.0
+offset_top = -230.0
+offset_right = 445.0
+offset_bottom = 230.0

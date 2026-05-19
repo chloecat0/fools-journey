@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://sacf0e672tte"]
 
+[ext_resource type="Script" uid="uid://bgdv388ylq2yp" path="res://card.gd" id="1_kikvd"]
+[ext_resource type="Resource" uid="uid://brxmy4e0g51kk" path="res://fool.tres" id="2_rjlel"]
+
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_nxf5b"]
 size = Vector2(250, 300)
 
@@ -10,6 +13,8 @@ anchor_bottom = 1.0
 offset_right = 161.0
 grow_vertical = 2
 alignment = 1
+script = ExtResource("1_kikvd")
+card_data = ExtResource("2_rjlel")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=860185369]
 layout_mode = 2
@@ -28,3 +33,5 @@ horizontal_alignment = 1
 [node name="Select" type="Button" parent="." unique_id=1663715099]
 layout_mode = 2
 text = "Take Reading"
+
+[connection signal="pressed" from="Select" to="." method="on_selected"]

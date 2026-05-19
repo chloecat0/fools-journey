@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Card" format=3 uid="uid://brxmy4e0g51kk"]
+
+[ext_resource type="Script" uid="uid://cxt1x5m7xhj2" path="res://card_data.gd" id="1_fdf5c"]
+
+[resource]
+script = ExtResource("1_fdf5c")
+title = "The Fool"
+description = "Does something cool"
+stat_change = 1.0
+metadata/_custom_type_script = "uid://cxt1x5m7xhj2"
